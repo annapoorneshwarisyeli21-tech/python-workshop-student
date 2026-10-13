@@ -1,4 +1,5 @@
-class Student:
+
+     class Student:
     """Represent a student."""
 
     def __init__(self, name, age, python, mathematics, communication):
