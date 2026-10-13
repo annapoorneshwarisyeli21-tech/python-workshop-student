@@ -1,3 +1,4 @@
+
 from student import Student
 from student_manager import StudentManager
 from storage import load_students, save_students
@@ -5,7 +6,6 @@ from student_api import get_user_details
 
 
 manager = StudentManager()
-
 # TODO: Load students from students.json
 
 
@@ -26,7 +26,6 @@ while True:
         # TODO: Add the student
         # TODO: Save students
         pass
-
     elif choice == "2":
         # TODO: View students
         pass
@@ -46,7 +45,6 @@ while True:
         # TODO: Update the student
         # TODO: Save students
         pass
-
     elif choice == "5":
         # TODO: Read student name
         # TODO: Delete the student
@@ -59,3 +57,4 @@ while True:
 
     else:
         print("Invalid choice.")
+
