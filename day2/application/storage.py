@@ -1,8 +1,10 @@
+
 import json
 
 
 def save_students(students, filename):
     """Save students to a JSON file."""
+
     data = []
 
     for student in students:
@@ -22,6 +24,7 @@ def save_students(students, filename):
 
 def load_students(filename, student_class):
     """Load students from a JSON file."""
+
     try:
         with open(filename, "r") as file:
             data = json.load(file)
@@ -36,6 +39,7 @@ def load_students(filename, student_class):
                 item["mathematics"],
                 item["communication"],
             )
+
             students.append(student)
 
         return students
@@ -45,3 +49,4 @@ def load_students(filename, student_class):
 
     except json.JSONDecodeError:
         return []
+
